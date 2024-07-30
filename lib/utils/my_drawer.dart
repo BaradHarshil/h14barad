@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'drawer_model.dart';
-import 'home_screen.dart';
+import 'package:h14barad/models/drawer_model.dart';
+import 'package:h14barad/screens/home_screen.dart';
 
 class MyDrawer extends StatelessWidget {
   List<DrawerItem> drawerItems = [
