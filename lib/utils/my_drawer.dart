@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:h14barad/models/drawer_model.dart';
 import 'package:h14barad/screens/home_screen.dart';
+import 'package:h14barad/screens/TabOne/tab_one.dart';
+import 'package:h14barad/screens/TabTwo/tab_two.dart';
 
 class MyDrawer extends StatelessWidget {
+  MyDrawer({super.key});
   List<DrawerItem> drawerItems = [
-    DrawerItem(title: 'Home', icon: Icons.home, page: HomeScreen(),),
+    DrawerItem(title: 'Tab Views', icon: Icons.tab, page: HomeScreen(),
+      subItems: [
+        DrawerSubItem(title: 'Tab One', page: TabOne(),),
+        DrawerSubItem(title: 'Tab Two', page: TabTwo(),),
+      ]
+    ),
     DrawerItem(title: 'Settings', icon: Icons.settings, page: HomeScreen(),),
     DrawerItem(title: 'Profile', icon: Icons.person, page: HomeScreen(),
       subItems: [
@@ -19,14 +27,14 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          UserAccountsDrawerHeader(
+            const UserAccountsDrawerHeader(
             accountName: Text("AppMaking.co",style: TextStyle(color: Colors.black),),
             accountEmail: Text("barad@appmaking.co",style: TextStyle(color: Colors.black),),
             currentAccountPicture: CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s"),
             ),
-            decoration: BoxDecoration(
+            decoration:  BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
                   "https://appmaking.co/wp-content/uploads/2021/08/android-drawer-bg.jpeg",
@@ -35,18 +43,19 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             otherAccountsPictures: [
-              CircleAvatar(
+               CircleAvatar(
                 backgroundColor: Colors.white,
                 backgroundImage: NetworkImage(
                     "https://randomuser.me/api/portraits/women/74.jpg"),
               ),
-              CircleAvatar(
+               CircleAvatar(
                 backgroundColor: Colors.white,
                 backgroundImage: NetworkImage(
                     "https://randomuser.me/api/portraits/men/47.jpg"),
               ),
             ],
-          ),          Expanded(
+          ),
+          Expanded(
             child: ListView(
             padding: EdgeInsets.zero,
             children: drawerItems.map((item) {

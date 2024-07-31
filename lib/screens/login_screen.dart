@@ -16,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: Colors.white,
         body: Column(
           children: [
-            Container(
+            SizedBox(
               width: double.infinity,
               height: MediaQuery.of(context).size.height / 3,
               child: Image.asset('lib/images/flutter.png'),
@@ -24,9 +24,9 @@ class _LoginScreenState extends State<LoginScreen> {
             Expanded(
               child: Container(
                 width: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
                   ),
