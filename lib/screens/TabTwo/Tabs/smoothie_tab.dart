@@ -9,11 +9,9 @@ class SmoothieTab extends StatefulWidget {
 class _SmoothieTabState extends State<SmoothieTab> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return const Center(
         child: Text(
             "SMOOTHIE TAB"
-        ),
       ),
     );
   }

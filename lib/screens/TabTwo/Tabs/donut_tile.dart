@@ -14,7 +14,7 @@ class _DonutTileState extends State<DonutTile> {
   final double borderRad= 12.0;
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: EdgeInsets.all(12),
+    return Padding(padding: const EdgeInsets.all(12),
     child: Container(
       decoration: BoxDecoration(
         color: widget.donutColor[50],
@@ -26,7 +26,7 @@ class _DonutTileState extends State<DonutTile> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: widget.donutColor[100],
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(borderRad),topRight: Radius.circular(borderRad))
@@ -38,15 +38,15 @@ class _DonutTileState extends State<DonutTile> {
           ],),
 
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 22.0, vertical: 10),
-            child: Image.asset("${widget.imageName}"),
+            padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 10),
+            child: Image.asset(widget.imageName),
           ),
           
-          Text(widget.donutFlavor, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+          Text(widget.donutFlavor, style:const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
           
           Text("dunkins",style: TextStyle(color: Colors.grey[600]),),
 
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
             child:
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

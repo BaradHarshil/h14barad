@@ -30,7 +30,7 @@ class _UiDesign1State extends State<UiDesign1> {
         ),
         centerTitle: false,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(CupertinoIcons.search))
+          IconButton(onPressed: () {}, icon: const Icon(CupertinoIcons.search))
         ],
       ),
       body: Column(

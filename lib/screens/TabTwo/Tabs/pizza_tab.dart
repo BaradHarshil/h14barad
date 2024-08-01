@@ -10,12 +10,10 @@ class PizzaTab extends StatefulWidget {
 class _PizzaTabState extends State<PizzaTab> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return const Center(
         child: Text(
             "PIZZA TAB"
         ),
-      ),
     );
   }
 }

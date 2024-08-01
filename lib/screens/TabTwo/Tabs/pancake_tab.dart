@@ -10,12 +10,10 @@ class PancakeTab extends StatefulWidget {
 class _PancakeTabState extends State<PancakeTab> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return const Center(
         child: Text(
             "PANCAKE TAB"
         ),
-      ),
     );
   }
 }

@@ -9,12 +9,10 @@ class BurgerTab extends StatefulWidget {
 class _BurgerTabState extends State<BurgerTab> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return const Center(
         child: Text(
             "BURGER TAB"
         ),
-      ),
-    );
+      );
   }
 }

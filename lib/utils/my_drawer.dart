@@ -11,12 +11,12 @@ class MyDrawer extends StatelessWidget {
     DrawerItem(title: 'Tab Views', icon: Icons.tab, page: HomeScreen(),
       subItems: [
         DrawerSubItem(title: 'Tab One', page: TabOne(),),
-        DrawerSubItem(title: 'Tab Two', page: TabTwo(),),
+        DrawerSubItem(title: 'Tab Two', page: const TabTwo(),),
       ]
     ),
     DrawerItem(title: 'UI Design', icon: Icons.design_services_outlined, page: HomeScreen(),
     subItems: [
-      DrawerSubItem(title: 'screen1', page: UiDesign1(title: "UiDesign1",),),
+      DrawerSubItem(title: 'screen1', page: const UiDesign1(title: "UiDesign1",),),
     ]),
     DrawerItem(title: 'Profile', icon: Icons.person, page: HomeScreen(),
       subItems: [

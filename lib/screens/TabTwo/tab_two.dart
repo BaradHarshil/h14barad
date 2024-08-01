@@ -14,11 +14,11 @@ class TabTwo extends StatefulWidget {
 
 class _TabTwoState extends State<TabTwo> {
   List<Widget> myTabs = [
-    MyTab(iconPath: "assets/TabTwoImages/donut.png"),
-    MyTab(iconPath: "assets/TabTwoImages/burger.png"),
-    MyTab(iconPath: "assets/TabTwoImages/pancake.png"),
-    MyTab(iconPath: "assets/TabTwoImages/pizza.png"),
-    MyTab(iconPath: "assets/TabTwoImages/smoothie.png"),
+    const MyTab(iconPath: "assets/TabTwoImages/donut.png"),
+    const MyTab(iconPath: "assets/TabTwoImages/burger.png"),
+    const MyTab(iconPath: "assets/TabTwoImages/pancake.png"),
+    const MyTab(iconPath: "assets/TabTwoImages/pizza.png"),
+    const MyTab(iconPath: "assets/TabTwoImages/smoothie.png"),
   ];
 
   @override
@@ -29,9 +29,9 @@ class _TabTwoState extends State<TabTwo> {
         appBar: AppBar(
           backgroundColor: Colors.blue[50],
           leading: Padding(
-            padding: EdgeInsets.only(left: 24.0),
+            padding: const EdgeInsets.only(left: 24.0),
             child: IconButton(
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: Colors.black,
               ),
@@ -40,9 +40,9 @@ class _TabTwoState extends State<TabTwo> {
           ),
           actions: [
             Padding(
-              padding: EdgeInsets.only(right: 24.0),
+              padding: const EdgeInsets.only(right: 24.0),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.person_outline_outlined,
                   color: Colors.black,
                 ),
@@ -54,7 +54,7 @@ class _TabTwoState extends State<TabTwo> {
         body: Column(
           children: [
             // I WANT TO EAT
-            Padding(
+           const Padding(
               padding: EdgeInsets.symmetric(horizontal: 36, vertical: 18),
               child: Row(
                 children: [
@@ -77,7 +77,7 @@ class _TabTwoState extends State<TabTwo> {
                 splashBorderRadius: BorderRadius.circular(10)),
 
             //TAB BAR VIEW
-            Expanded(
+           const Expanded(
               child: TabBarView(
                 children: [
                   DonutTab(),
