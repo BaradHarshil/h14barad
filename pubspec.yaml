@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/TabOneImages/
     - assets/TabTwoImages/
+    - assets/UiDesign1Images/
     - lib/images/
   #   - images/a_dot_ham.jpeg
 

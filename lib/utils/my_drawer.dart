@@ -3,6 +3,7 @@ import 'package:h14barad/models/drawer_model.dart';
 import 'package:h14barad/screens/home_screen.dart';
 import 'package:h14barad/screens/TabOne/tab_one.dart';
 import 'package:h14barad/screens/TabTwo/tab_two.dart';
+import 'package:h14barad/screens/UIDesign1/ui_design1.dart';
 
 class MyDrawer extends StatelessWidget {
   MyDrawer({super.key});
@@ -13,7 +14,10 @@ class MyDrawer extends StatelessWidget {
         DrawerSubItem(title: 'Tab Two', page: TabTwo(),),
       ]
     ),
-    DrawerItem(title: 'Settings', icon: Icons.settings, page: HomeScreen(),),
+    DrawerItem(title: 'UI Design', icon: Icons.design_services_outlined, page: HomeScreen(),
+    subItems: [
+      DrawerSubItem(title: 'screen1', page: UiDesign1(title: "UiDesign1",),),
+    ]),
     DrawerItem(title: 'Profile', icon: Icons.person, page: HomeScreen(),
       subItems: [
         DrawerSubItem(title: 'Edit Profile', page: HomeScreen(),),
