@@ -14,6 +14,7 @@ class _DonutTileState extends State<DonutTile> {
   final double borderRad= 12.0;
   @override
   Widget build(BuildContext context) {
+    double h = MediaQuery.of(context).size.height;
     return Padding(padding: const EdgeInsets.all(12),
     child: Container(
       decoration: BoxDecoration(
@@ -26,7 +27,7 @@ class _DonutTileState extends State<DonutTile> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
             Container(
-              padding: const EdgeInsets.all(10),
+              padding: EdgeInsets.all(h*0.008),
               decoration: BoxDecoration(
                 color: widget.donutColor[100],
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(borderRad),topRight: Radius.circular(borderRad))

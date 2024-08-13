@@ -17,6 +17,8 @@ class _CrudOperationState extends State<CrudOperation> {
   late final fireStore = FirebaseFirestore.instance.collection("Data");
   @override
   Widget build(BuildContext context) {
+    double w = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(title: const Text("CRUD OP with Firebase")),
       body: SingleChildScrollView(
@@ -65,9 +67,9 @@ class _CrudOperationState extends State<CrudOperation> {
             ),
             const SizedBox(height: 10,),
             Padding(
-             padding: const EdgeInsets.only(left: 20.0,right: 20.0),
+             padding: EdgeInsets.only(left: w*0.02,right: w*0.02),
              child: Row(
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               mainAxisAlignment: MainAxisAlignment.spaceAround,
                children: [
                  OutlinedButton(
                   style: OutlinedButton.styleFrom(
@@ -75,11 +77,11 @@ class _CrudOperationState extends State<CrudOperation> {
                       color: Colors.green,
                     ),
                   ),
-                  onPressed: () async {
+                  onPressed: ()  async {
                     await createDataBase();
                     Navigator.push(context, MaterialPageRoute(builder: (context)=> ShowData("add")));
                       },
-                  child: const Text("Add data"),
+                  child: const Text("Add"),
                  ),
                  OutlinedButton(
                   style: OutlinedButton.styleFrom(
@@ -88,7 +90,7 @@ class _CrudOperationState extends State<CrudOperation> {
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=> ShowData("edit")));
                     },
-                  child: const Text("Go to Edit data"),
+                  child: const Text("Go Edit"),
                  ),
 
                  OutlinedButton(
@@ -101,7 +103,7 @@ class _CrudOperationState extends State<CrudOperation> {
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>ShowData("delete")));
                   },
-                  child: const Text("Go & Delete",style:TextStyle(overflow: TextOverflow.clip),),
+                  child: const Text("Go Delete",style:TextStyle(overflow: TextOverflow.clip),),
                  ),
                ],
              ),
