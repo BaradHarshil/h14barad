@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "898648695070",
+    "project_id": "auth-ec7d5",
+    "storage_bucket": "auth-ec7d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898648695070:android:b919ee54c7ac2a96f3a90f",
+        "android_client_info": {
+          "package_name": "com.example.googleauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtIBbHqIcpl8pUYLiaDFTM-_esv7xDQrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898648695070:android:eaaf2afcc26a9a20f3a90f",
+        "android_client_info": {
+          "package_name": "com.example.h14barad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtIBbHqIcpl8pUYLiaDFTM-_esv7xDQrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898648695070:android:03dbdb537816db14f3a90f",
+        "android_client_info": {
+          "package_name": "com.h14barad.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtIBbHqIcpl8pUYLiaDFTM-_esv7xDQrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
