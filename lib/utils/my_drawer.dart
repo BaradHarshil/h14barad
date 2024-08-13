@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:h14barad/models/drawer_model.dart';
+import 'package:h14barad/screens/FireStore/crud_operation.dart';
 import 'package:h14barad/screens/home_screen.dart';
 import 'package:h14barad/screens/TabOne/tab_one.dart';
 import 'package:h14barad/screens/TabTwo/tab_two.dart';
@@ -20,10 +21,9 @@ class MyDrawer extends StatelessWidget {
       DrawerSubItem(title: 'screen1', page: const UiDesign1(title: "UiDesign1",),),
       DrawerSubItem(title: 'screen2 + API', page: UserDetails(title: "Ui + API",),),
     ]),
-    DrawerItem(title: 'Profile', icon: Icons.person, page: HomeScreen(),
+    DrawerItem(title: 'Firebase', icon: Icons.local_fire_department_outlined, page: HomeScreen(),
       subItems: [
-        DrawerSubItem(title: 'Edit Profile', page: HomeScreen(),),
-        DrawerSubItem(title: 'View Profile', page: HomeScreen(),),
+        DrawerSubItem(title: 'CRUD', page: CrudOperation(),),
       ],
     ),
   ];
@@ -35,10 +35,9 @@ class MyDrawer extends StatelessWidget {
         children: [
             const UserAccountsDrawerHeader(
             accountName: Text("AppMaking.co",style: TextStyle(color: Colors.black),),
-            accountEmail: Text("barad@appmaking.co",style: TextStyle(color: Colors.black),),
+            accountEmail: Text("baradharshil2015@mail.com",style: TextStyle(color: Colors.black),),
             currentAccountPicture: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s"),
+              backgroundImage: AssetImage("assets/profile.jpg"),
             ),
             decoration:  BoxDecoration(
               image: DecorationImage(
